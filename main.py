@@ -1,5 +1,4 @@
 from aiogram import Bot, Dispatcher
-# from pathlib import Path
 import basic
 import asyncio
 from get_keys import BOT_KEY
