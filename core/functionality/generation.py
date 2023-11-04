@@ -16,7 +16,7 @@ def generate_answer(transcription, chat_id):
             "content": transcription
         }],
         temperature=0.5,
-        max_tokens=48
+        max_tokens=256
     )
     answer = str(response['choices'][0]['message']['content'])
     generate_tts(answer, chat_id)
