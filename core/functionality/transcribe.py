@@ -11,6 +11,3 @@ def transcribe_voice(audio_path: str, chat_id):
     transcript = openai.Audio.transcribe(
     "whisper-1", file=audio_file, response_format="text")
     generate_answer(transcript, chat_id)
-
-
-# added audio_path

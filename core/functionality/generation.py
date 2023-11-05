@@ -20,6 +20,3 @@ def generate_answer(transcription, chat_id):
     )
     answer = str(response['choices'][0]['message']['content'])
     generate_tts(answer, chat_id)
-    # print(response['choices'][0]['message']['content'])
-
-# generate_answer("Let's start")
